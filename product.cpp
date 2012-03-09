@@ -18,17 +18,17 @@ float multiply(float *projection,float *feature)
 int main()
 {
 	fstream feat1,feat2,projection;
-	projection.open("randomProjection.txt",fstream::in);
+	projection.open("dataset/randomProjection.txt",fstream::in);
 	fstream output;
-	output.open("dataset1010.txt",fstream::out);
+	output.open("dataset/dataset1010.txt",fstream::out);
 	F(i,1500)
 	{
 		float proj[1010];
 		float feature[1010];
 		F(j,1010)
 			projection>>proj[j];
-		feat1.open("featureangdistance.txt",fstream::in);
-		feat2.open("featuretriangle.txt",fstream::in);
+		feat1.open("dataset/featureangdistance.txt",fstream::in);
+		feat2.open("dataset/featuretriangle.txt",fstream::in);
 		F(k,800)
 		{
 			F(j,810)

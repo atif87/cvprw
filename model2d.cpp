@@ -53,7 +53,7 @@ int main()
 				}
 			}
 			fstream fw;
-			char out[40]="featureangdistance.txt";
+			char out[100]="dataset/featureangdistance.txt";
 			fw.open(out,fstream::out| fstream::app);
 			cout<<X.size()<<endl;
 			for(int j=0;j<9;j++)

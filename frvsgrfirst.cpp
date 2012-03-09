@@ -67,9 +67,9 @@ int main(int argc,char *arg[])
 	float temp,min=100,max=-100;
 	fstream dataset;
 	float traindata[trsize],testdata[tesize];
-	dataset.open("dataset1010.txt",fstream::in);
+	dataset.open("dataset/dataset1010.txt",fstream::in);
 	fstream sc;
-	sc.open("score.txt",fstream::in);
+	sc.open("dataset/score.txt",fstream::in);
 	F(i,tesize)
 		F(j,trsize)
 			sc>>score[i][j];

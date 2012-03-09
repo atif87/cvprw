@@ -106,7 +106,7 @@ int main()
 			Y.clear();
 			T.clear();
 			fstream fw;
-			char out[40]="featuretriangle.txt";
+			char out[100]="dataset/featuretriangle.txt";
 			cout<<out<<endl;
 			fw.open(out,fstream::out|fstream::app);
 			F(i,10)

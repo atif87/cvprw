@@ -23,7 +23,7 @@ int main(int argc,char *arg[])
 	F(j,1500)
 	{
 		cout<<j<<" "<<index[j]<<endl;
-		dataset.open("dataset1010.txt",fstream::in);
+		dataset.open("dataset/dataset1010.txt",fstream::in);
 		F(k,index[j]+1)
 		{
 			F(i,800)
